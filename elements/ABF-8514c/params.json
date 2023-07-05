@@ -1,0 +1,82 @@
+{
+    "add_is_visible": false,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 32,
+        "width": 32
+    },
+    "display": "Print.js Client",
+    "events": {
+        "AAu": {
+            "caption": "Print Started",
+            "doc": "PDF is being loaded.",
+            "name": "printstarted"
+        },
+        "AAv": {
+            "caption": "Print Completed",
+            "doc": "PDF has loaded.",
+            "name": "printcompleted"
+        },
+        "AAw": {
+            "caption": "Print Exited",
+            "doc": "Browser print dialog is closed.",
+            "name": "printexited"
+        },
+        "AAx": {
+            "caption": "Download Started",
+            "doc": "Request has started to load data.",
+            "name": "downloadstarted"
+        },
+        "AAy": {
+            "caption": "Download Progressed",
+            "doc": "Request received more data.",
+            "name": "downloadprogressed"
+        },
+        "AAz": {
+            "caption": "Download Completed",
+            "doc": "Transaction completed successfully.",
+            "name": "downloadcompleted"
+        },
+        "ABA": {
+            "caption": "Action Failed",
+            "doc": "An error occurred while executing an action, or the action could not be completed.",
+            "name": "actionfailed"
+        },
+        "ABB": {
+            "caption": "PDF Opened",
+            "doc": "PDF opened in new tab.",
+            "name": "pdfopened"
+        }
+    },
+    "has_reset_fn": true,
+    "icon": "ion-android-print",
+    "states": {
+        "ABC": {
+            "caption": "Download Total",
+            "doc": "A 64-bit unsigned integer representing the total amount of work that the underlying process is in the progress of performing. When downloading a resource using HTTP, this is the Content-Length (the size of the body of the message), and doesn't include the headers and other overhead.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    \n    // Empty\n\treturn null;\n}"
+            },
+            "name": "downloadtotal",
+            "value": "number"
+        },
+        "ABD": {
+            "caption": "Download So Far",
+            "doc": "A 64-bit unsigned integer value indicating the amount of work already performed by the underlying process. The ratio of work done can be calculated by dividing total by the value of this property. When downloading a resource using HTTP, this only counts the body of the HTTP message, and doesn't include headers and other overhead.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    \n    // Empty\n\treturn null;\n}"
+            },
+            "name": "downloadsofar",
+            "value": "number"
+        },
+        "ABE": {
+            "caption": "Download URL",
+            "doc": "Local URL reference to the downloaded content.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    \n    // Empty\n\treturn null;\n}"
+            },
+            "name": "downloadurl",
+            "value": "text"
+        }
+    }
+}

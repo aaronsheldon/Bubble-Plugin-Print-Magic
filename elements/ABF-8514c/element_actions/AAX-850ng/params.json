@@ -1,0 +1,188 @@
+{
+    "caption": "Print",
+    "doc": "There are four print document types available: 'pdf', 'html', 'image' and 'json'.  The default type is 'pdf'.  It's basic usage is to call printJS() and just pass in a PDF document url: printJS('docs/PrintJS.pdf').  For image files, the idea is the same, but you need to pass a second argument: printJS('images/PrintJS.jpg', 'image').  To print HTML elements, in a similar way, pass in the element id and type: printJS('myElementId', 'html').  When printing JSON data, pass in the data, type and the data properties that you want to print: printJS({printable: myData, type: 'json', properties: ['prop1', 'prop2', 'prop3']});",
+    "fields": {
+        "AAY": {
+            "caption": "Printable Content",
+            "doc": "Document source: PDF or image URL, HTML element id or JSON data object.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "printablecontent",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAZ": {
+            "caption": "Content Type",
+            "doc": "Printable type. Availble print options are: pdf, html, image, json and raw-html. Base64 Used when printing PDF documents passed as base64 data.",
+            "editor": "Dropdown",
+            "name": "contenttype",
+            "optional": true,
+            "options": "PDF URL,PDF Base64,HTML Element,Image,Serialized JSON,Raw HTML",
+            "rank": 2
+        },
+        "AAa": {
+            "caption": "There are four print document types available: 'pdf', 'html', 'image' and 'json'.  The default type is 'pdf'.  It's basic usage is to call printJS() and just pass in a PDF document url: printJS('docs/PrintJS.pdf').  For image files, the idea is the same, but you need to pass a second argument: printJS('images/PrintJS.jpg', 'image').  To print HTML elements, in a similar way, pass in the element id and type: printJS('myElementId', 'html').  When printing JSON data, pass in the data, type and the data properties that you want to print: printJS({printable: myData, type: 'json', properties: ['prop1', 'prop2', 'prop3']});",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        },
+        "AAb": {
+            "caption": "Header",
+            "doc": " Optional header to be used with HTML, Image or JSON printing. It will be placed on the top of the page. This property will accept text or raw HTML.",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "header",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAc": {
+            "caption": "Header Style",
+            "doc": " Optional header style to be applied to the header text.",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "headerstyle",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "AAd": {
+            "caption": "Maximum Width",
+            "doc": " Max document width in pixels. Change this as you need. Used when printing HTML, Images or JSON.",
+            "editor": "DynamicValue",
+            "name": "width",
+            "optional": true,
+            "rank": 5,
+            "value": "number"
+        },
+        "AAe": {
+            "caption": "CSS URLs",
+            "doc": "This allow us to pass one or more css files URLs that should be applied to the html being printed. Value can be a string with a single URL or an array with multiple URLs.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "long_text": false,
+            "name": "cssurls",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        },
+        "AAf": {
+            "caption": "Style",
+            "doc": " This allow us to pass a string with custom style that should be applied to the html being printed.",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": false,
+            "name": "style",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "AAg": {
+            "caption": "Process Styles",
+            "doc": " When set to false, the library will not process styles applied to the html being printed. Useful when using the css parameter.",
+            "editor": "DynamicValue",
+            "name": "processstyles",
+            "optional": true,
+            "rank": 8,
+            "value": "boolean"
+        },
+        "AAh": {
+            "caption": "Specific Styles",
+            "doc": " By default, the library process some styles only, when printing HTML elements. This option allows you to pass an array of styles that you want to be processed. Ex.: ['padding-top', 'border-bottom']",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "specificstyles",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        },
+        "AAi": {
+            "caption": "Style Ranges",
+            "doc": " Same as `targetStyle`, however, this will process any a range of styles. Ex.: ['border', 'padding'], will include 'border-bottom', 'border-top', 'border-left', 'border-right', 'padding-top', etc. You can also pass ['*'] to process all styles.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "styleranges",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        },
+        "AAj": {
+            "caption": "Ignore Elements",
+            "doc": "Accepts an array of html ids that should be ignored when printing a parent html element.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "ignoreelements",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "AAk": {
+            "caption": "JSON Properties",
+            "doc": " Used when printing JSON. These are the object property names.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "jsonproperties",
+            "optional": true,
+            "rank": 12,
+            "value": "text"
+        },
+        "AAl": {
+            "caption": "Table Header Style",
+            "doc": "Optional style for the grid header when printing JSON data.",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "tableheaderstyle",
+            "optional": true,
+            "rank": 13,
+            "value": "text"
+        },
+        "AAm": {
+            "caption": "tablestyle",
+            "doc": "Optional style for the grid rows when printing JSON data.",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "tablestyle",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "AAn": {
+            "caption": "Repeat Table Header",
+            "doc": " Used when printing JSON data. When set to false, the data table header will show in first page only.",
+            "editor": "DynamicValue",
+            "name": "repeattableheader",
+            "optional": true,
+            "rank": 15,
+            "value": "boolean"
+        },
+        "AAo": {
+            "caption": "message",
+            "doc": "Enable this option to show user feedback when retrieving or processing large PDF files. Message displayed to users when showModal is set to true.",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "message",
+            "optional": true,
+            "rank": 16,
+            "value": "text"
+        },
+        "AAp": {
+            "caption": "Title",
+            "doc": " When printing html, image or json, this will be shown as the document title.",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "title",
+            "optional": true,
+            "rank": 17,
+            "value": "text"
+        },
+        "AAq": {
+            "caption": "Fallback PDF",
+            "doc": " When printing pdf, if the browser is not compatible (check browser compatibility table), the library will open the pdf in a new tab. This allow you to pass a different pdf document to be opened instead of the original passed in `printable`. This may be useful if you inject javascript in your alternate pdf file.",
+            "editor": "DynamicValue",
+            "name": "fallbackpdf",
+            "optional": true,
+            "rank": 18,
+            "value": "text"
+        }
+    }
+}

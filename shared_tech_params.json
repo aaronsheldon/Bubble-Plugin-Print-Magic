@@ -1,0 +1,12 @@
+{
+    "assets": {
+        "ABG": {
+            "name": "printjs.ico",
+            "url": "//meta.cdn.bubble.io/f1672943730799x960759320908104100/printjs.ico"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": "3",
+        "use_jquery": true
+    }
+}

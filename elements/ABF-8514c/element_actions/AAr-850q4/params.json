@@ -1,0 +1,20 @@
+{
+    "caption": "Close",
+    "doc": "Close a local URL.",
+    "fields": {
+        "AAs": {
+            "caption": "Local URL",
+            "doc": "Local URL to revoke.",
+            "editor": "DynamicValue",
+            "name": "localurl",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAt": {
+            "caption": "Close a local URL.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    }
+}

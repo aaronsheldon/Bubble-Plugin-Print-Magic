@@ -1,0 +1,80 @@
+{
+    "category": "plugins",
+    "display": "Print Magic",
+    "fields": {
+        "AAD": {
+            "caption": "CSS Selectors",
+            "doc": "CSS selectors to be embedded into a temporary STYLE element. Will be append in the order of the list.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "long_text": true,
+            "name": "styleselectors",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "AAE": {
+            "caption": "HTML Pages",
+            "doc": "HTML pages to be embedded into a temporary invisible DIV element of the current page. Will be appended in the order of the list.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "long_text": true,
+            "name": "htmlpages",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AAF": {
+            "caption": "Margin (mm)",
+            "doc": "Margin of the page in millimetres.",
+            "editor": "DynamicValue",
+            "name": "pagemargin",
+            "optional": true,
+            "rank": 4,
+            "value": "number"
+        },
+        "AAG": {
+            "caption": "Copies",
+            "doc": "Number of copies of the document to make.",
+            "editor": "DynamicValue",
+            "name": "copies",
+            "optional": true,
+            "rank": 3,
+            "value": "number"
+        },
+        "AAH": {
+            "caption": "Width (mm)",
+            "doc": "Width of the page in millimetres, in the direction of head travel.",
+            "editor": "DynamicValue",
+            "name": "pagewidth",
+            "optional": true,
+            "rank": 5,
+            "value": "number"
+        },
+        "AAI": {
+            "caption": "Height (mm)",
+            "doc": "Height of the page in millimetres, in the direction of page feed.",
+            "editor": "DynamicValue",
+            "name": "pageheight",
+            "optional": true,
+            "rank": 6,
+            "value": "number"
+        },
+        "AAJ": {
+            "caption": "Orientation",
+            "doc": "Orientation of the content.",
+            "editor": "Dropdown",
+            "name": "pageorientation",
+            "optional": true,
+            "options": "portrait,landscape",
+            "rank": 7
+        },
+        "AAL": {
+            "caption": "Style and send an HTML snippet straight to the browser print dialog without using IFRAMEs, popups, or new browser tabs.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "type": "client_side"
+}

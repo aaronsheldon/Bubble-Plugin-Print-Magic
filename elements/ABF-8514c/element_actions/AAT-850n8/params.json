@@ -1,0 +1,28 @@
+{
+    "caption": "Save",
+    "doc": "Prompt to save a local URL.",
+    "fields": {
+        "AAU": {
+            "caption": "Local Filename",
+            "doc": "Default file name for use in labelling the resource in a local file system. If the name is not a valid file name in the underlying OS, the browser will adjust it.",
+            "editor": "DynamicValue",
+            "name": "localfilename",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAV": {
+            "caption": "Local URL",
+            "doc": "URL for an HREF linked resource.",
+            "editor": "DynamicValue",
+            "name": "localurl",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAW": {
+            "caption": "Prompt to save a local URL.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    }
+}

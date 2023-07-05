@@ -1,0 +1,20 @@
+{
+    "caption": "Download",
+    "doc": "Download a remote URL to a local URL.",
+    "fields": {
+        "AAR": {
+            "caption": "Remote URL",
+            "doc": "URL to send the request to.",
+            "editor": "DynamicValue",
+            "name": "remoteurl",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAS": {
+            "caption": "Download a remote URL to a local URL.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    }
+}
