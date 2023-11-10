@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
     
     // Load and clean
     const copies = Math.max(1, properties.copies || 1);
